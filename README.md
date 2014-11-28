@@ -1,4 +1,4 @@
 moving-there-ui
 ===============
 
-UI for final WDI project.
+UI for final WDI project. App to help users determine where to move based on various criteria such as stats about a community, transportation or what's nearby to do.
