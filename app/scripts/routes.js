@@ -1,6 +1,6 @@
 angular.module('MovnThereUI').config(function($routeProvider) {
     'use strict';
-debugger;
+
     $routeProvider
         .when('/', {
             templateUrl: 'templates/home.html',
