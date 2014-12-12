@@ -2,7 +2,7 @@ angular.module('MovnThereUI').factory('AuthFactory', function($http, $window, Se
     'use strict';
 
     var login = function(credentials) {
-debugger;
+
         return $http
             .post(ServerUrl + 'login', credentials)
             .success(function(response) {
@@ -16,7 +16,7 @@ debugger;
         var params = {
             user: credentials
         };
-debugger;
+
         return $http
         .post(ServerUrl + 'users', params)
         .success(function(response) {

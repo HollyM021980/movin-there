@@ -2,7 +2,7 @@ angular.module('MovnThereUI').controller('SignupCtrl', function($scope, $locatio
   'use strict';
 
   $scope.signup = function(credentials) {
-debugger;
+
     AuthFactory.signup(credentials).success(function(response) {
       $location.path('/');
     });
