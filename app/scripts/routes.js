@@ -18,11 +18,8 @@ angular.module('MovnThereUI').config(function($routeProvider) {
             templateUrl: 'templates/signup.html',
             controller: 'SignupCtrl'
         })
-        .when('/about', {
-            templateUrl: 'templates/about.html',
-        })
-        .when('/contact', {
-            templateUrl: 'templates/contact.html',
+        .when('/logout', {
+            controller: 'LogoutCtrl'
         })
         .otherwise({
             redirectTo: '/'

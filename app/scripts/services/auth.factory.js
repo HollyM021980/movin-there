@@ -29,7 +29,7 @@ angular.module('MovnThereUI').factory('AuthFactory', function($http, $window, Se
 
     var logout = function(credentials) {
         return $http
-            .get(ServerUrl + '/logout')
+            .post(ServerUrl + '/logout')
             .success(function(response) {
                 $window.sessionStorage.removeItem('movnThereUI.user');
             });
