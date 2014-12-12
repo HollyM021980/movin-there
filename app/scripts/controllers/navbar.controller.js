@@ -1,5 +1,8 @@
 angular.module('MovnThereUI')
-  .controller('NavbarController',
+  .controller('NavbarController', [
+    '$scope',
+    '$location',
+    'AuthFactory',
     function($scope, $location, AuthFactory) {
       'use strict';
 
@@ -16,5 +19,6 @@ angular.module('MovnThereUI')
       $scope.isLoggedIn = function() {
         return AuthFactory.isAuthenticated();
       };
-  }
+    }
+  ]
 );
