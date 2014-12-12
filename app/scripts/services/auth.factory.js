@@ -18,7 +18,7 @@ angular.module('MovnThereUI').factory('AuthFactory', function($http, $window, Se
         };
 
         return $http
-        .post(ServerUrl + 'users', params)
+        .post(ServerUrl + 'signup', params)
         .success(function(response) {
             $window.sessionStorage.setItem('movnThereUI.user', response.token);
 
