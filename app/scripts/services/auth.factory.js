@@ -8,7 +8,7 @@ angular.module('MovnThereUI').factory('AuthFactory', function($http, $window, Se
             .success(function(response) {
                 $window.sessionStorage.setItem('movnThereUI.user', response.token);
 
-                $http.defaults.headers.common['Authorization'] = 'Token token=' + $window.sessionStorage.getItem('movnThereUIUI.user');
+                $http.defaults.headers.common['Authorization'] = 'Token token=' + $window.sessionStorage.getItem('movnThereUI.user');
             });
     };
 
