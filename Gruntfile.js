@@ -280,6 +280,17 @@ module.exports = function (grunt) {
 
     // Copies remaining files to places other tasks can use
     copy: {
+      devDist: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>',
+          dest: '<%= config.dist %>',
+          src: [
+            '**'
+          ]
+        }]
+      },
       dist: {
         files: [{
           expand: true,
@@ -366,6 +377,14 @@ module.exports = function (grunt) {
       'mocha'
     ]);
   });
+
+  //
+  // register a 'devDist' task
+  //
+  grunt.registerTask('devDist', [
+    'clean:dist',
+    'copy:devDist',
+  ]);
 
   grunt.registerTask('build', [
     'clean:dist',

@@ -1,13 +1,20 @@
-angular.module('MovnThereUI').controller('LoginCtrl', function($scope, $location, AuthFactory) {
-  'use strict';
+angular.module('MovnThereUI')
+  .controller('LoginCtrl', [
+      '$scope',
+      '$location',
+      'AuthFactory',
+      function($scope, $location, AuthFactory) {
+        'use strict';
 
-  $scope.login = function(credentials) {
-    AuthFactory.login(credentials).success(function(response) {
-      $location.path('/');
-    });
-  };
+        $scope.login = function(credentials) {
+          AuthFactory.login(credentials).success(function(response) {
+            $location.path('/');
+          });
+        };
 
-  $scope.goToSignup = function(){
-    $location.path('/signup');
-  };
-});
+        $scope.goToSignup = function(){
+          $location.path('/signup');
+        };
+      }
+  ]
+);

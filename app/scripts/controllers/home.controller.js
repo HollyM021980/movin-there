@@ -1,5 +1,11 @@
-angular.module('MovnThereUI').controller('HomeCtrl', function($scope, UserFactory) {
-  'use strict';
+angular.module('MovnThereUI')
+  .controller('HomeCtrl', [
+    '$scope',
+    'UserFactory',
+    function($scope, UserFactory) {
+      'use strict';
 
-  $scope.users = UserFactory.users;
-});
+      $scope.users = UserFactory.users;
+    }
+  ]
+);
