@@ -8,12 +8,12 @@ angular.module('MovnThereUI',['ngRoute'])
         'AuthFactory',
         'UserFactory',
         function(
-        $rootScope,
-        $location,
-        $http,
-        $window,
-        AuthFactory,
-        UserFactory
+            $rootScope,
+            $location,
+            $http,
+            $window,
+            AuthFactory,
+            UserFactory
         ) {
             'use strict';
             $rootScope.$on('$routeChangeStart', function(event, next) {
