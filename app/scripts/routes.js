@@ -24,6 +24,12 @@ angular.module('MovnThereUI')
                 .when('/logout', {
                     controller: 'LogoutCtrl'
                 })
+                .when('/about', {
+                    templateUrl: 'templates/about.html',
+                })
+                .when('/contact', {
+                    templateUrl: 'templates/contact.html',
+                })
                 .otherwise({
                     redirectTo: '/'
                 });
