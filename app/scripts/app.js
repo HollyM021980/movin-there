@@ -1,6 +1,8 @@
 // initialize the app
-angular.module('MovnThereUI',['ngRoute'])
-    .run([
+angular.module('MovnThereUI',[
+    'ui.bootstrap',
+    'ngRoute'
+  ]).run([
         '$rootScope',
         '$location',
         '$http',
