@@ -9,10 +9,6 @@ angular.module('MovnThereUI')
                     templateUrl: 'templates/home.html',
                     controller: 'HomeCtrl'
                 })
-                .when('/users', {
-                    templateUrl: 'templates/users.html',
-                    controller: 'UserCtrl'
-                })
                 .when('/login', {
                     templateUrl: 'templates/login.html',
                     controller: 'LoginCtrl'
