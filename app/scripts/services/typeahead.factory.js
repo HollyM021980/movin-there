@@ -14,6 +14,7 @@ angular.module('MovnThereUI')
                 },
                 params: {
                   address: val,
+                  components: 'country:US',
                   sensor: false
                 }
             });
