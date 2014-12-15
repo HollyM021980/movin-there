@@ -1,25 +1,24 @@
 angular.module('MovnThereUI')
-  .factory('TypeAheadFactory', [
-    '$scope',
+    .factory('TypeAheadFactory', [
     '$http',
-    'GglKey',
-    function($scope, $http, GglKey) {
+    function($http) {
+      'use strict';
+      var locations = [];
 
-      $scope.selected = undefined;
-
-      $scope.getLocation = function(val) {
-        return $http.get('http://maps.googleapis.com/maps/api/geocode/json', {
-          params: {
-            address: val,
-            sensor: false,
-            key: GglKey
-          }
-        }).then(function(response){
-          return response.data.results.map(function(item){
-            return item.formatted_address;
-          });
-        });
+      return {
+        getLocation : function(val) {
+            return $http.get('http://maps.googleapis.com/maps/api/geocode/json', {
+                headers: {
+                  'Accept':  'application/json, text/plain, * / *',
+                  'Authorization': undefined
+                },
+                params: {
+                  address: val,
+                  sensor: false
+                }
+            });
+        }
       };
-    }
-  ]
-});
+}]);
+
+

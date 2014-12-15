@@ -9,13 +9,15 @@ angular.module('MovnThereUI',[
         '$window',
         'AuthFactory',
         'UserFactory',
+        'TypeAheadFactory',
         function(
             $rootScope,
             $location,
             $http,
             $window,
             AuthFactory,
-            UserFactory
+            UserFactory,
+            TypeAheadFactory
         ) {
             'use strict';
             $rootScope.$on('$routeChangeStart', function(event, next) {

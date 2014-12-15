@@ -1,6 +1,7 @@
 node_modules
 .tmp
 .env
+.DS_Store
 bower_components/*
 test/bower_components/*
 temp-requesturls
