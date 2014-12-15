@@ -5,8 +5,14 @@ angular.module('MovnThereUI')
     function($scope, TypeAheadFactory) {
       'use strict';
 
+        $scope.onSelect = function ($item) {
+          debugger;
+          $scope.$item = $item;
 
-       $scope.getLocation = function(val) {
+          // Get geo info about the place
+         };
+
+        $scope.getLocation = function(val) {
 
             return TypeAheadFactory.getLocation(val).then(function(res){
                 var addresses = [];
