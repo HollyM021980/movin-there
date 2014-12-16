@@ -25,6 +25,11 @@ angular.module('MovnThereUI')
                 return addresses;
             });
         };
+
+        $scope.getCitiesInRadius = function(location) {
+
+        };
+
       }
     ]
   );
