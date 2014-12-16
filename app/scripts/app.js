@@ -1,7 +1,12 @@
 // initialize the app
 angular.module('MovnThereUI',[
     'ui.bootstrap',
-    'ngRoute'
+    'ngAnimate',
+    'ngCookies',
+    'ngResource',
+    'ngRoute',
+    'ngSanitize',
+    'ngTouch'
   ]).run([
         '$rootScope',
         '$location',

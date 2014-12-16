@@ -6,29 +6,29 @@ angular.module('MovnThereUI')
 
             $routeProvider
                 .when('/', {
-                    templateUrl: 'templates/home.html',
+                    templateUrl: 'views/home.html',
                     controller: 'HomeCtrl'
                 })
                 .when('/users', {
-                    templateUrl: 'templates/users.html',
+                    templateUrl: 'views/users.html',
                     controller: 'UserCtrl'
                 })
                 .when('/login', {
-                    templateUrl: 'templates/login.html',
+                    templateUrl: 'views/login.html',
                     controller: 'LoginCtrl'
                 })
                 .when('/signup', {
-                    templateUrl: 'templates/signup.html',
+                    templateUrl: 'views/signup.html',
                     controller: 'SignupCtrl'
                 })
                 .when('/logout', {
                     controller: 'LogoutCtrl'
                 })
                 .when('/about', {
-                    templateUrl: 'templates/about.html',
+                    templateUrl: 'views/about.html',
                 })
                 .when('/contact', {
-                    templateUrl: 'templates/contact.html',
+                    templateUrl: 'views/contact.html',
                 })
                 .otherwise({
                     redirectTo: '/'
