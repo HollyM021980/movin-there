@@ -6,4 +6,6 @@ angular.module('MovnThereUI')
       'use strict';
 
 
+      });
+
 }]);
