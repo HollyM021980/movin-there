@@ -15,8 +15,9 @@ angular.module('MovnThereUI')
                 },
                 params: {
                   address: val,
-                  components: 'country:US',
                   key: GglKey,
+                  types: '(cities)',
+                  components: 'country:US',
                   sensor: false
                 }
             });

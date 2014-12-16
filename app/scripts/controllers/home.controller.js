@@ -5,9 +5,9 @@ angular.module('MovnThereUI')
     function($scope, TypeAheadFactory) {
       'use strict';
 
-        $scope.onSelect = function ($item) {
-          debugger;
+        $scope.onSelect = function ($item, $model) {
           $scope.$item = $item;
+          $scope.$model = $model;
 
           // Get geo info about the place
          };
@@ -17,7 +17,10 @@ angular.module('MovnThereUI')
             return TypeAheadFactory.getLocation(val).then(function(res){
                 var addresses = [];
                 angular.forEach(res.data.results, function(item){
-                    addresses.push(item.formatted_address);
+                    addresses.push({
+                      formatted_address: item.formatted_address,
+                      location: item.geometry.location
+                      })
                 });
                 return addresses;
             });
