@@ -14,8 +14,6 @@ angular.module('MovnThereUI')
       $scope.longitude = -71.060097;
 
         $scope.onSelect = function ($item, $model) {
-
-        debugger;
           $scope.latitude = $item.location.lat;
           $scope.longitude = $item.location.lng;
           $scope.city = $item.formatted_address;
