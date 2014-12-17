@@ -6,7 +6,8 @@ angular.module('MovnThereUI',[
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'uiGmapgoogle-maps'
   ]).run([
         '$rootScope',
         '$location',
