@@ -4,7 +4,6 @@ angular.module('MovnThereUI')
     'GglKey',
     function($http, GglKey) {
       'use strict';
-      var locations = [];
 
       return {
         getLocation : function(val) {
