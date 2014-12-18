@@ -51,9 +51,9 @@ div > .home-overlay, .login-overlay, .signup-overlay {
   position: relative;
   width: 90%;
   left: 15px;
-  background: hsla(211, 52%, 48%, 0.5);
+  background: hsla(211, 52%, 48%, 0.75);
   padding: 50px 75px;
-  box-shadow: 0px 0px 15px 7px hsla(211, 52%, 48%, 0.5);
+  box-shadow: 0px 0px 15px 7px hsla(211, 52%, 48%, 0.75);
 }
 
 div > .home-overlay > .city-search {
@@ -70,6 +70,9 @@ div > .home-overlay > .city-search {
 */
 label.control-label {
   color: #000;
+  text-shadow: none;
+  font-size: 2rem;
+
 }
 
 /*
