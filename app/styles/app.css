@@ -24,6 +24,11 @@ body {
 /*
   HEADERS
 */
+div#form-signinup-heading {
+  text-align: center;
+  font-size: 3rem;
+}
+
 h1#main-header {
   position: relative;
   padding-bottom: 40px;
@@ -60,11 +65,17 @@ div > .home-overlay > .city-search {
   opacity: 0.85;
 }*/
 
+/*
+  FORMS
+*/
+label.control-label {
+  color: #000;
+}
 
 /*
   BUTTONS
 */
-button.mvnthere-btn, button.mvnthere-btn[disabled] {
+button.mvnthere-btn {
   color: #fff;
   background-color: #6fd983;
   border-color: #357ebd;
@@ -72,6 +83,15 @@ button.mvnthere-btn, button.mvnthere-btn[disabled] {
 
 button.mvnthere-btn[disabled] {
   background-color: #b7ecc1;
+}
+
+
+
+button.mvnthere-btn:hover {
+  background-color: #777;
+  transition-duration: 0.3s;
+  transition-property: background;
+  transform: translateZ(0);
 }
 
 .angular-google-map-container {
@@ -86,23 +106,23 @@ button.mvnthere-btn[disabled] {
 */
 
 a.signinup-text {
-  color: #777;
+  color: #6fd983;
   text-decoration: none;
 }
 
-.signup-text:hover,
-.signup-text:focus {
 
-
+a:hover,
+a:focus {
+  color: #777;
+  background-color: transparent;
 }
+
 .navbar-inverse {
   background-color: #fff;
   border-color: #080808;
 }
 
 
-a:hover,
-a:focus,
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #6fd983;
