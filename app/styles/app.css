@@ -47,7 +47,7 @@ form.typeahead-search {
  HOME
 */
 
-div > .home-overlay, .login-overlay {
+div > .home-overlay, .login-overlay, .signup-overlay {
   position: relative;
   width: 90%;
   left: 15px;
