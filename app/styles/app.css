@@ -75,7 +75,7 @@ div > .home-overlay {
     position:relative;
     padding-left:70px;
 }
-.navbar .brand {
+/*.navbar .brand {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -83,6 +83,12 @@ div > .home-overlay {
     background: #f00;
     margin-left: 0px;
     padding: 10px;
+}*/
+
+.navbar-brand > img {
+  vertical-align: initial;
+  position: relative;
+  top: -12px;
 }
 
 
