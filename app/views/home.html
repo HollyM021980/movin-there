@@ -1,6 +1,8 @@
 <div class="container" ng-controller="HomeCtrl">
-    <h1>Welcome!</h1>
+    <h1>Find out everything you need to know about your new neighborhood</h1>
 
-    <ng-include src="'views/partials/mapradius.html'"></ng-include>
-    <ng-include src="'views/partials/map.html'"></ng-include>
+    <div class="home-overlay">
+      <ng-include src="'views/partials/mapradius.html'"></ng-include>
+      <ng-include src="'views/partials/map.html'"></ng-include>
+    </div>
 </div>

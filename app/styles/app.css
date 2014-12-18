@@ -5,12 +5,86 @@
   padding: 0px
 }*/
 
+html {
+/* Background */
+  background-color: none;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-shadow: 1px 1px #161A1A;
+  margin-top: 7%;
+  background:
+  url(images/neighborhood.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+div > .home-overlay {
+  position: relative;
+  width: 75%;
+  background: hsla(0, 75%, 75%, 0.5)
+
+}
+
+/*
+  background-color: #3b7abc;
+  opacity: 0.85;
+}*/
+
 .angular-google-map-container {
   height: 400px;
 }
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer;
 }
+
+.navbar-inverse {
+  background-color: #fff;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #777;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #b1b4b8;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #777;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #777;
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #6fd983;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #6fd983;
+  background-color: #3b7abc;
+}
+
+.navbar-inner{
+    position:relative;
+    padding-left:70px;
+}
+.navbar .brand {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    background: #f00;
+    margin-left: 0px;
+    padding: 10px;
+}
+
 
 
 
