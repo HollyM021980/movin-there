@@ -22,13 +22,22 @@ body {
 }
 
 /*
-  MAIN HEADER
+  HEADERS
 */
 h1#main-header {
   position: relative;
   padding-bottom: 40px;
+  color: #000;
 }
 
+h2#mapradius-header {
+  position: relative;
+  padding-bottom: 40px  ;
+}
+
+form.typeahead-search {
+  padding-bottom: 40px;
+}
 /*
  HOME
 */
