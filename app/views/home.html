@@ -1,8 +1,10 @@
 <div class="container" ng-controller="HomeCtrl">
-    <h1>Find out everything you need to know about your new neighborhood</h1>
+    <h1 class="main-header">Find out everything you need to know about your new neighborhood</h1>
 
     <div class="home-overlay">
+      <div class="city-search">
       <ng-include src="'views/partials/mapradius.html'"></ng-include>
-      <ng-include src="'views/partials/map.html'"></ng-include>
+      </div>
+      <ng-include class="results-map" src="'views/partials/map.html'"></ng-include>
     </div>
 </div>

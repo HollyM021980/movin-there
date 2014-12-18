@@ -21,17 +21,36 @@ body {
     background-size: cover;
 }
 
+/*
+  MAIN HEADER
+*/
+h1 > .main-header {
+  position: relative;
+}
+
+/*
+ HOME
+*/
+
 div > .home-overlay {
   position: relative;
-  width: 75%;
+  width: 80%;
+  left: 100px;
   background: hsla(0, 75%, 75%, 0.5)
+}
 
+div > .home-overlay > .city-search {
+  width: 75%;
 }
 
 /*
   background-color: #3b7abc;
   opacity: 0.85;
 }*/
+
+/*
+  NAVBAR
+*/
 
 .angular-google-map-container {
   height: 400px;
@@ -90,6 +109,8 @@ div > .home-overlay {
   position: relative;
   top: -12px;
 }
+
+
 
 
 
