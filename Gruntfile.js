@@ -238,8 +238,8 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
-          src: '**/*.{png,jpg,jpeg,gif}',
+          cwd: '<%= yeoman.app %>/styles/images/',
+          src: '/styles/images/**/*.{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
         }]
       }
@@ -307,6 +307,7 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'views/**/*.html',
+            'styles/images/**/*.{png,jpg,jpeg,gif}',
             'images/**/*.{webp}',
             'fonts/**/*.*'
           ]
