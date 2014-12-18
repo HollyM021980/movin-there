@@ -1,13 +1,16 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-controller="NavbarController">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header navbar-inner">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" ng-href="#/">Movn' There</a>
+            <a class="navbar-brand img-responsive" href="#"><img src="styles/images/movnthere-logo.png" alt="MovnThere"></a>
+
+    <!--             <a class="navbar-brand" ng-href="#/">Movn' There</a>
+    -->
         </div>
         <div class="collapse navbar-collapse">
             <ul ng-if="isLoggedIn()" class="nav navbar-nav">
@@ -21,6 +24,6 @@
                 <li ng-if="!isLoggedIn()"><a ng-href="#/signup">Signup</a></li>
                 <li ng-if="isLoggedIn()"><a ng-click="logout()">Logout</a></li>
             </ul>
-        </div>
+    </div>
     </div>
 </div>
