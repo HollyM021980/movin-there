@@ -37,11 +37,12 @@ h1#main-header {
 
 h2#mapradius-header {
   position: relative;
-  padding-bottom: 40px  ;
+  padding-bottom: 40px;
 }
 
-form.typeahead-search {
-  padding-bottom: 40px;
+div.city-search {
+  padding-bottom: 10px;
+  vertical-align: center;
 }
 /*
  HOME
@@ -52,7 +53,7 @@ div > .home-overlay, .login-overlay, .signup-overlay, .about-overlay {
   width: 90%;
   left: 15px;
   background: hsla(211, 52%, 48%, 0.75);
-  padding: 50px 75px;
+  padding: 40px 75px;
   box-shadow: 0px 0px 15px 7px hsla(211, 52%, 48%, 0.75);
 }
 
@@ -75,6 +76,11 @@ label.control-label {
 
 }
 
+.form-control:focus, .form-control:focus + span .btn {
+    border-color:#6fd983;
+    box-shadow:none;
+}
+
 /*
   BUTTONS
 */
@@ -91,6 +97,7 @@ button.mvnthere-btn[disabled] {
 
 
 button.mvnthere-btn:hover {
+  border-color:#6fd983;
   background-color: #777;
   transition-duration: 0.3s;
   transition-property: background;
