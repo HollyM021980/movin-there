@@ -47,7 +47,7 @@ form.typeahead-search {
  HOME
 */
 
-div > .home-overlay, .login-overlay, .signup-overlay {
+div > .home-overlay, .login-overlay, .signup-overlay, .about-overlay {
   position: relative;
   width: 90%;
   left: 15px;
@@ -113,6 +113,31 @@ a.signinup-text {
   text-decoration: none;
 }
 
+h1.about-header {
+  font-weight: bold;
+  font-size: 8rem;
+}
+
+
+p.cast-name, p.cast-title, p.mission-text {
+  color: #000;
+  font-weight: bold;
+  text-shadow: none;
+  margin-left: 40px;
+}
+
+a.user-list {
+  color: #000;
+  text-shaddow: none;
+}
+
+p.cast-name {
+  font-size: 3rem;
+}
+p.cast-title {
+  font-style: italic;
+  margin-left: 45px;
+}
 
 a:hover,
 a:focus {
