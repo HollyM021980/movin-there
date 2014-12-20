@@ -13,10 +13,10 @@
     -->
         </div>
         <div class="collapse navbar-collapse">
-            <ul ng-if="isLoggedIn()" class="nav navbar-nav">
+            <ul class="nav navbar-nav">
                 <li ng-class="{ active: isActive('/')}"><a ng-href="#/">Home</a></li>
-                <li ng-class="{ active: isActive('/about')}"><a ng-href="#/about">About</a></li>
-                <li ng-class="{ active: isActive('/users')}"><a ng-href="#/users">Users</a></li>
+                <li ng-if="isLoggedIn()" ng-class="{ active: isActive('/about')}"><a ng-href="#/about">About</a></li>
+                <li ng-if="isLoggedIn()" ng-class="{ active: isActive('/users')}"><a ng-href="#/users">Users</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li ng-if="!isLoggedIn()"><a ng-href="#/login">Login</a></li>
