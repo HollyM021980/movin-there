@@ -53,7 +53,7 @@ angular.module('MovnThereUI')
             latitude: $scope.latitude,
             longitude: $scope.longitude
           },
-          icon: "styles/images/map-pin.png",
+          icon: "styles/images/map-pin-sm.png",
           control: {}
         }
 
