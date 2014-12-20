@@ -5,6 +5,7 @@ angular.module('MovnThereUI')
     function($scope, UserFactory) {
       'use strict';
 
+      UserFactory.fetch();
       $scope.users = UserFactory.users;
     }
   ]
