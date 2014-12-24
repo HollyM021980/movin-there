@@ -14,7 +14,6 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 2.4rem;
   color: #ffffff;
-  text-shadow: 1px 1px #161A1A;
   margin: 5% 0;
   background:
   url(images/neighborhoodimage.png) no-repeat center center;
@@ -33,6 +32,7 @@ h1#main-header {
   position: relative;
   padding-bottom: 40px;
   color: #000;
+  text-shadow: 1px 1px #161A1A;
 }
 
 h2#mapradius-header {
