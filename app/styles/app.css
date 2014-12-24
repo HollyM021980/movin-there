@@ -192,6 +192,11 @@ a:focus {
   top: -12px;
 }
 
+div.map-info {
+  color: #000;
+  text-shadow: none;
+}
+
 
 
 
