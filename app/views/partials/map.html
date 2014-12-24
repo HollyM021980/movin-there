@@ -1,5 +1,12 @@
 <div>
   <ui-gmap-google-map center="map.center" zoom="map.zoom"  control="map.control" refresh="true">
-    <ui-gmap-marker idkey="marker.idKey" coords="marker.coords" icon="marker.icon"></ui-gmap-marker>
+    <ui-gmap-marker idkey="map.marker.idKey" model="map.marker" coords="map.marker.coords" icon="map.marker.icon" click="map.marker.onClicked">
+      <ui-gmap-window show="map.marker.showWindow" closeClick="'closeClick'" ng-cloak>
+
+          <div class="map-info">
+            <p>{{ city }}</p>
+          </div>
+       </ui-gmap-window>
+    </ui-gmap-marker>
   </ui-gmap-google-map>
 </div>
