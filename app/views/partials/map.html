@@ -5,7 +5,11 @@
 
           <div class="map-info">
             <p>{{ city }}</p>
+            <div ng-controller='PointInfoCtrl'>
+              <a class="btn map-info" ng-click="clickedButtonInWindow()">More Info</a>
+            </div>
           </div>
+
        </ui-gmap-window>
     </ui-gmap-marker>
   </ui-gmap-google-map>

@@ -59,19 +59,28 @@ angular.module('MovnThereUI')
         control: {}
       };
 
+      $scope.map.window = {
+         templateUrl: 'partials/point-info.html',
+        templateParameter: {
+          city: $scope.city,
+          lat: $scope.latitude,
+          lon: $scope.longitude
+        }
+      }
 
 
-        $scope.windowOptions = {
-            visible: false
-        };
 
-        $scope.onClick = function() {
-            $scope.windowOptions.visible = !$scope.windowOptions.visible;
-        };
+    $scope.windowOptions = {
+        visible: false
+    };
 
-        $scope.closeClick = function() {
-            $scope.windowOptions.visible = false;
-        };
+    $scope.onClick = function() {
+        $scope.windowOptions.visible = !$scope.windowOptions.visible;
+    };
+
+    $scope.closeClick = function() {
+        $scope.windowOptions.visible = false;
+    };
 
 
 }]);
