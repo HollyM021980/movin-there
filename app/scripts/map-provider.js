@@ -2,7 +2,7 @@ angular.module('MovnThereUI')
   .config([
     'uiGmapGoogleMapApiProvider',
     'GglKey',
-    function (GoogleMapApi) {
+    function (GoogleMapApi, GglKey) {
       GoogleMapApi.configure({
         key: GglKey,
         v: '3.17',

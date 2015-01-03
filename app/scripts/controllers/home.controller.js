@@ -3,14 +3,25 @@ angular.module('MovnThereUI')
     '$scope',
     'uiGmapGoogleMapApi',
     'TypeAheadFactory',
-    function($scope, GoogleMapApi, TypeAheadFactory) {
+    'uiGmapIsReady',
+    function($scope, GoogleMapApi, TypeAheadFactory, IsReady) {
       'use strict';
 
 
-    GoogleMapApi.then(function(maps) {
-        $scope.googleVersion = maps.version;
+      GoogleMapApi.then(function(maps) {
+        maps.visualRefresh = true;
 
-    });
+      });
+
+      IsReady.promise().then(function (maps) {
+        maps.forEach(function(inst){
+          debugger;
+          var map = inst.map;
+          var mapInstanceNumber = inst.instance; // Starts at 1.
+          // $scope.placesService = new google.maps.places.PlacesService(map);
+        });
+      });
+
 
       // Initial location
       $scope.latitude = 42.3584865;
@@ -55,18 +66,14 @@ angular.module('MovnThereUI')
         events: {
           tilesloaded: function (map) {
             $scope.$apply(function () {
+              debugger;
               $scope.gMap = map;
-              // $log.info('this is the map instance', map);
+              $scope.placesService = new google.maps.places.PlacesService(map);
             });
           }
         }
       };
 
-
-// debugger;
-//       $scope.gMap = $scope.map.control.getGMap;
-
-//       $scope.service = new $scope.gMap.places.PlacesService(map);
 
 
       $scope.map.marker = {
