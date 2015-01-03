@@ -7,11 +7,18 @@ angular.module('MovnThereUI')
       'use strict';
 
 
+    GoogleMapApi.then(function(maps) {
+        $scope.googleVersion = maps.version;
+
+    });
+
       // Initial location
       $scope.latitude = 42.3584865;
       $scope.longitude = -71.060097;
       $scope.city = "Boston, MA, USA"
 
+      // Update longitude and latitude when someone
+      // selects a location and recenter the map.
       $scope.onSelect = function ($item, $model) {
         $scope.latitude = $item.location.lat;
         $scope.longitude = $item.location.lng;
@@ -44,8 +51,23 @@ angular.module('MovnThereUI')
           longitude: $scope.longitude
         },
         zoom: 12,
-        control: {}
+        control: {},
+        events: {
+          tilesloaded: function (map) {
+            $scope.$apply(function () {
+              $scope.gMap = map;
+              // $log.info('this is the map instance', map);
+            });
+          }
+        }
       };
+
+
+// debugger;
+//       $scope.gMap = $scope.map.control.getGMap;
+
+//       $scope.service = new $scope.gMap.places.PlacesService(map);
+
 
       $scope.map.marker = {
         idKey: 1,

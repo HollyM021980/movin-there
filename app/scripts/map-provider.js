@@ -6,6 +6,6 @@ angular.module('MovnThereUI')
       GoogleMapApi.configure({
         key: GglKey,
         v: '3.17',
-        libraries: 'weather,geometry,visualization'
+        libraries: 'places'
       });
 }])
