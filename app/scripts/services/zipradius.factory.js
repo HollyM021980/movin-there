@@ -15,20 +15,22 @@ angular.module('MovnThereUI')
         ZipRadiusFactory.fetchCities = function(zipCode, mileRadius) {
 
           var zipcodeSearchURL =
-              ["https://www.zipcodeapi.com/rest/",
+              ['https://www.zipcodeapi.com/rest/',
                 ZipKey,
-                "/radius.json/",
+                '/radius.json/',
                 zipCode,
-                "/",
+                '/',
                 mileRadius,
-                "/mile/"
-              ].join("");
+                '/mile/'
+              ].join('');
 // debugger;
+
           return $http.jsonp(zipcodeSearchURL, zipHeaders)
             .then(
               function (response) {
                 debugger;
                 return {
+                  data: response.data
                    // title: response.data.title,
                    // cost:  response.data.price
                 }
