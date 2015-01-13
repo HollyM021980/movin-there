@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Movin' There UI</title>
+    <title>Movin' There</title>
 
     <link rel="shortcut icon" href="favicon-16x16.png">
 <!--     <link rel="icon" type="png" href="favicon-16x16.jpg" />
@@ -37,7 +37,9 @@
     <ng-view></ng-view>
 
     <!-- Google Maps apis  -->
+<!--
     <script src='//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places'></script>
+ -->
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -61,6 +63,7 @@
     <!-- App files -->
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/map-provider.js"></script>
     <script src="scripts/constants.js"></script>
     <script src="scripts/routes.js"></script>
 
@@ -76,6 +79,12 @@
     <script src="scripts/services/user.factory.js"></script>
     <script src="scripts/services/auth.factory.js"></script>
     <script src="scripts/services/typeahead.factory.js"></script>
+    <script src="scripts/services/zipradius.factory.js"></script>
+
+
+    <!-- Template Controllers -->
+    <script src="scripts/controllers/templates/point-info.controller.js"></script>
+
     <!-- endbuild -->
 
     <!-- Directives -->
